@@ -27,7 +27,9 @@ const thoughtController = {
       .sort({ _id: -1 })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No thoughts found with that id!' });
+          res
+            .status(404)
+            .json({ message: 'Not a thought with that ID to be found!' });
           return;
         }
         res.json(dbThoughtData);
@@ -49,7 +51,7 @@ const thoughtController = {
       })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No user found with this id!' });
+          res.status(404).json({ message: 'Cannot find a user with this id!' });
           return;
         }
         res.json(dbThoughtData);
@@ -65,7 +67,11 @@ const thoughtController = {
     })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No thoughts found with that id!' });
+          res
+            .status(404)
+            .json({
+              message: 'No thoughts found with that id! Where are they?',
+            });
           return;
         }
         res.json(dbThoughtData);
@@ -78,7 +84,9 @@ const thoughtController = {
     Thought.findOneAndDelete({ _id: params.id })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No thoughts found with that id!' });
+          res
+            .status(404)
+            .json({ message: 'No thoughts found with that id! Gone missin!' });
           return;
         }
         return User.findOneAndUpdate(
@@ -89,7 +97,11 @@ const thoughtController = {
       })
       .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: 'No User found with this id!' });
+          res
+            .status(404)
+            .json({
+              message: 'No User found with this id! Send out a search party!',
+            });
           return;
         }
         res.json(dbUserData);
@@ -107,7 +119,9 @@ const thoughtController = {
       .select('-__v')
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No thoughts with this ID.' });
+          res
+            .status(404)
+            .json({ message: 'No thoughts with this ID. Really too bad.' });
           return;
         }
         res.json(dbThoughtData);
@@ -123,7 +137,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'Nope!' });
+          res.status(404).json({ message: 'Not happening!' });
           return;
         }
         res.json(dbThoughtData);
