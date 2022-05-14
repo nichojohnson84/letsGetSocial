@@ -1,5 +1,6 @@
 const router = require('express').Router();
 
+//added s to getAllUser so it changed color
 const {
   getAllUsers,
   getUserById,

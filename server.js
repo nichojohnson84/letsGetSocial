@@ -13,7 +13,7 @@ app.use(require('./routes'));
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/letsGetSocial',
   {
-    useFindAndModify: false,
+    //had to remove useFindAndModify: false,  no longer works in Mongo
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }
