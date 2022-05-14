@@ -3,11 +3,11 @@ const { User, Thought } = require('../models');
 const thoughtController = {
   getAllThought(req, res) {
     Thought.find({})
-      /*.populate({
+      .populate({
         path: 'reactions',
         select: '-__v',
       })
-      .select('-__v')*/
+      .select('-__v')
       .sort({ _id: -1 })
       .then((dbThoughtData) => res.json(dbThoughtData))
       .catch((err) => {
@@ -67,11 +67,9 @@ const thoughtController = {
     })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res
-            .status(404)
-            .json({
-              message: 'No thoughts found with that id! Where are they?',
-            });
+          res.status(404).json({
+            message: 'No thoughts found with that id! Where are they?',
+          });
           return;
         }
         res.json(dbThoughtData);
@@ -97,11 +95,9 @@ const thoughtController = {
       })
       .then((dbUserData) => {
         if (!dbUserData) {
-          res
-            .status(404)
-            .json({
-              message: 'No User found with this id! Send out a search party!',
-            });
+          res.status(404).json({
+            message: 'No User found with this id! Send out a search party!',
+          });
           return;
         }
         res.json(dbUserData);
@@ -121,7 +117,7 @@ const thoughtController = {
         if (!dbThoughtData) {
           res
             .status(404)
-            .json({ message: 'No thoughts with this ID. Really too bad.' });
+            .json({ message: 'Too Bad! No thoughts with this ID.' });
           return;
         }
         res.json(dbThoughtData);

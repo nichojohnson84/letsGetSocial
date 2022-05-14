@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/nichojohnson84/letsGetSocial.git"
   },
-  "keywords": ["Social Network, Social"],
+  "keywords": [
+    "Social Network, Social"
+  ],
   "author": "Nick Johnson <nickcjohnson84@outlook.com> (https://github.com/nichojohnson84)",
   "license": "MIT",
   "bugs": {
