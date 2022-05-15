@@ -14,7 +14,7 @@ All of the back end programming and routing for a social media site. It is set u
 
 ## Usage
 
-Clone the repo, navigate to the root folder, run the following commands from you terminal:
+Clone the repo, navigate to the root folder, once you have made sure that Mongo is running run the following commands from you terminal:
 
 Install Dependencies;  
 `npm install`
@@ -61,6 +61,24 @@ SOFTWARE.
 
 ## Documentation
 
-Insert links to videos
+-Link to User Routes and Friend Routes
+https://drive.google.com/file/d/1e1633eAhhlgnlVBuu7IAEAkK6ulTmHpO/view
 
-## Contact
+-Link to thought routes and reactions
+https://drive.google.com/file/d/1vK-Tc8ffJ6NvbI8LFBAqWJhkCv9P5H6q/view
+
+## Feedback
+
+- Feedback on improvments or just your general experience using this is always appreciated.
+
+- Please also let me know if you run into any bugs.
+
+- You can visit my page on GitHub below that also contains my contact information.
+
+### You can also visit my Bio page and see some other projects I am workin on.
+
+-https://nichojohnson84.github.io/myBio/
+
+## Questions
+
+-[nichojohnson84](https://github.com/nichojohnson84)
