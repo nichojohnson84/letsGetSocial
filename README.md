@@ -67,7 +67,8 @@ https://drive.google.com/file/d/1e1633eAhhlgnlVBuu7IAEAkK6ulTmHpO/view
 -Link to thought routes and reactions
 https://drive.google.com/file/d/1vK-Tc8ffJ6NvbI8LFBAqWJhkCv9P5H6q/view
 
-## Feedback
+## Contact
+### Feedback
 
 - Feedback on improvments or just your general experience using this is always appreciated.
 
